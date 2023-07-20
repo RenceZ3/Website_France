@@ -1,0 +1,289 @@
+/* Element style */
+
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+h1, h4, p {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h4 {
+    margin: 0;
+    font-size: 40px;
+}
+
+
+
+header, section, footer {
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+}
+
+section {
+    background-color: #FFFFFF;
+}
+
+footer {
+    background-color: #1D4071;
+    width: 100%;
+    height: 5%;
+}
+
+a {
+    color: #FFFFFF;
+    font-size: 1vw;
+    text-decoration: none;
+}
+/* Class style */
+
+.background-position { 
+    position: relative;
+    height: 100%;
+}
+
+.main-img {
+    background: url(../images/tower.png) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secondary-img {
+    background: url(../images/eff-nobg.png) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.main-navigation {
+    position: fixed;
+    background-color: #AB0800;
+    float: right;
+    margin-top: 30px;
+    right: 0;
+    width: 35%;
+    z-index: 1;
+}
+
+.main-navigation ul {
+    list-style: none;
+    text-align: center;
+    padding-inline-start: 0;
+}
+
+.main-navigation ul li {
+    display: inline;
+    padding: 16px 20px;
+    margin-right: 10px; 
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-navigation ul li:hover {
+    background-color: #AC423C;
+}
+
+.paris-container {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-flex;
+    left: 20%;
+    height: 12rem;
+    top: -30%;
+}
+
+.text-paris {
+    font-size: 9vw;
+    letter-spacing: 0.5em;
+}
+
+._s {
+    padding-left: 8%;
+}
+
+.animate-container {
+    /* visibility: hidden; */
+    align-items: center;
+    height: 70vh;
+    margin: 10px;
+}
+
+.animate-word {
+    position: absolute;
+    top: 290px;
+    left: 220px;
+
+    background-color: transparent;
+    font-size: 1.5em;
+    height: 70px;
+    overflow: hidden;
+    width: 40%;
+    
+}
+
+.animate-container > div > div > h1 {
+    margin-top: 0px;
+    /* margin-bottom: 10%; */
+}
+
+.animate-word > div > div {
+    /* padding: 0.25rem 0.75rem; */
+    height:2.81rem;
+    /* margin-bottom: 2.81rem; */
+    display:inline-block;
+}
+
+.animate-word div:first-child {
+    animation: text-animation 12s infinite;
+}
+
+.separator {
+    height: 10px;
+}
+
+
+.fa-angles-down, .fa-angles-up {
+    color: #58A1CA;
+    display: block;
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+    z-index: 3;
+}
+
+.fa-angles-down {
+    bottom: 40px;
+}
+
+.fa-angles-up {
+    padding-top: 30px;
+}
+
+.container-par {
+    display: inline-flex;
+}
+
+.container-par img {
+    padding-left: 11px;
+    margin-top: -3px;
+}
+
+.text-content {
+    display: block;
+    margin: -5% 25%;
+    min-height: 10px;
+    overflow: hidden;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+.text-content h1 {
+    color: #141414;
+    font-size: 4vw;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    color: #141414;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    color: #FFFFFF;
+    word-spacing: 1rem;
+    letter-spacing: 5px;
+    padding: 5px;
+}
+/* ID's style */
+
+#scroll-page {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+    scroll-behavior: smooth !important;
+}
+#logo-exp {
+    position: relative;
+    bottom: 70px;
+    padding-top: 30px;
+    padding-left: 8%;
+}
+
+#logo-exp h4{
+    color: #42489C;
+}
+
+#logo-exp .container-par h4 {
+    color: #FF4B55;
+}
+
+/* media-query style */
+
+@media screen and (max-width: 848px) {
+
+    /* Element style */
+    a {
+        font-size: 1vw;
+    }
+
+    /* Class style */
+    .main-navigation {
+        width: 17%;
+        height: 23px;
+    }
+
+    .main-navigation ul {
+        margin: 2px;
+    }
+
+    .main-navigation ul li {
+        padding: 2px 0;
+        margin: 0;
+    }
+
+    .animate-word {
+        top: 180px;
+        left: 90px;
+    }
+
+}
+
+
+@media screen and (max-width: 920px){
+    .w-35 {
+        width: 100%;
+    }
+}
+
+/* Animation style */
+@keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: 0;}
+    20% {margin-top: -2.62rem;}
+    30% {margin-top: -6.62rem;}
+    40% {margin-top: -12.62rem;}
+    50% {margin-top: -17.62rem;}
+    60% {margin-top: -12.62rem;}
+    70% { margin-top: -6.62rem;}
+    80% { margin-top: -2.62rem;} 
+    90% { margin-top: 0;} 
+    100% { margin-top: 0;}
+}
