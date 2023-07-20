@@ -5,7 +5,7 @@ body, html {
     height: 100%;
 }
 
-h1, h4, p {
+h1, h4, p, ul {
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -15,8 +15,6 @@ h4 {
     margin: 0;
     font-size: 40px;
 }
-
-
 
 header, section, footer {
     background-color: gray;
@@ -29,17 +27,48 @@ section {
     background-color: #FFFFFF;
 }
 
-footer {
-    background-color: #1D4071;
-    width: 100%;
-    height: 5%;
-}
-
 a {
     color: #FFFFFF;
     font-size: 1vw;
     text-decoration: none;
 }
+
+aside {
+    background-color: #1d407199;
+    border-radius: 0 20px 20px 0;
+    float: left;
+    position: absolute;
+    top: 325px;
+    z-index: 5;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0.5em;
+}
+
+aside ul li {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+footer {
+    background-color: #1D4071;
+    height: auto;
+    text-align: center;
+    width: 100%;
+    max-height: 20%;
+}
+
+footer p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 0.5rem;
+    word-spacing: 1em;
+    letter-spacing: 5px;
+    padding: 1rem;
+}
+
 /* Class style */
 
 .background-position { 
@@ -150,16 +179,17 @@ a {
 
 
 .fa-angles-down, .fa-angles-up {
+    width: 20px;
+    margin: 0 auto;
     color: #58A1CA;
     display: block;
     font-size: 2rem;
     position: relative;
-    text-align: center;
     z-index: 3;
 }
 
 .fa-angles-down {
-    bottom: 40px;
+    bottom: 70px;
 }
 
 .fa-angles-up {
@@ -201,16 +231,12 @@ a {
     color: #141414;
 }
 
-footer {
-    text-align: center;
+aside .fa-brands:hover {
+    cursor: pointer;
+    transform: scale(3);
+    transition: 0.5s cubic-bezier(0.6, 0.03, 0.28, 0.98);
 }
 
-footer p {
-    color: #FFFFFF;
-    word-spacing: 1rem;
-    letter-spacing: 5px;
-    padding: 5px;
-}
 /* ID's style */
 
 #scroll-page {
