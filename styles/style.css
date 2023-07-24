@@ -13,7 +13,7 @@ h1, h4, p, ul {
 
 h4 {
     margin: 0;
-    font-size: 40px;
+    font-size: 2em;
 }
 
 header, section, footer {
@@ -89,6 +89,12 @@ footer p {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+}
+
+.secondary-img a:first-of-type {
+    display: block;
+    width: 20px;
+    margin: 0 auto;
 }
 
 .main-navigation {
@@ -201,8 +207,9 @@ footer p {
 }
 
 .container-par img {
-    padding-left: 11px;
-    margin-top: -3px;
+    width: 2.5em;
+    padding-left: 0.5em;
+    margin-top: -0.4em;
 }
 
 .text-content {
@@ -247,9 +254,10 @@ aside .fa-brands:hover {
     scroll-behavior: smooth !important;
 }
 #logo-exp {
+    display: inline-block;
     position: relative;
     bottom: 70px;
-    padding-top: 30px;
+    padding-top: 2.5rem;
     padding-left: 8%;
 }
 
