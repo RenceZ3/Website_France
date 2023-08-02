@@ -38,7 +38,7 @@ aside {
     border-radius: 0 20px 20px 0;
     float: left;
     position: absolute;
-    top: 325px;
+    top: 35%;
     z-index: 5;
 }
 
@@ -98,10 +98,11 @@ footer p {
 }
 
 .main-navigation {
-    position: fixed;
+    position: sticky;
     background-color: #AB0800;
     float: right;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    top: 30px;
     right: 0;
     width: 35%;
     z-index: 1;
