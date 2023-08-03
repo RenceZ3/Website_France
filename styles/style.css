@@ -99,6 +99,7 @@ footer p {
 
 .main-navigation {
     position: sticky;
+    position: -webkit-sticky;
     background-color: #AB0800;
     float: right;
     /* margin-top: 30px; */
