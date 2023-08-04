@@ -356,6 +356,13 @@ img:hover .overlay-name {
 
 }
 
+.divider-content {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 15%;
+    
+}
 
 /* ID's style */
 
